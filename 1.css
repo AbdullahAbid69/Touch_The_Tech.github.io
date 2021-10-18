@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: #e3edf7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill{
+    width: 160;
+    height: 160;
+    /*background: cornflowerblue;*/
+    position: relative;
+}
+.outer{
+    height: 160;
+    width: 160;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(255, 86, 100, 0.966),
+                -6px -6px 10px -1px rgba(255, 253, 106, 0.979);
+}
+.inner{
+    height: 120;
+    width: 120;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgb(143, 248, 102),
+                inset -4px -4px 6px -1px rgb(74, 255, 156),
+                -0.5px -0.5 px 0px rgba(0,0,0,0.15),
+                0.5px 0.5px 0px rgba(225,225,225,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+#number{
+    font-weight: 600;
+    color: #555;
+
+}
+circle{
+    fill: none;
+    stroke: rgb(94, 204, 255);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+@keyframes anim{
+    100%{
+    stroke-dashoffset: 165;
+    }
+}
